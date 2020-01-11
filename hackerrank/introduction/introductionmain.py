@@ -1,8 +1,9 @@
-from hackerrank.introduction import helloworld, ifelse, arithematicoperator
+from hackerrank.introduction import helloworld, ifelse, arithematicoperator,division
 
 
 def main():
-    helloworld.sayhelloworld()
-    ifelse.if_else(3)
-    arithematicoperator.arithop(3, 2)
+    helloworld.fun_helloworld()
+    ifelse.fun_ifelse(3)
+    arithematicoperator.fun_arithematic(3, 2)
+    division.fun_division(4,3)
     return 1;

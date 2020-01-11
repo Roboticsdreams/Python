@@ -39,7 +39,7 @@ n > 20 and n is even, so it isn't weird. Thus, we print Not Weird.
 """
 
 
-def if_else(n):
+def fun_ifelse(n):
     if (n % 2 != 0) or (6 <= n <= 20):
         print("Weird")
     else:

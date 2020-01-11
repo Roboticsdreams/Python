@@ -32,7 +32,7 @@ Explanation 0
 """
 
 
-def arithop(a, b):
+def fun_arithematic(a, b):
     print(a + b)
     print(a - b)
     print(a * b)

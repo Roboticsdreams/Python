@@ -21,5 +21,5 @@ Sample Output 0
 Hello, World!
 """
 
-def sayhelloworld():
+def fun_helloworld():
     print("Hello, World!")

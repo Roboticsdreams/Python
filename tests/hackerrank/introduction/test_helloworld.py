@@ -5,10 +5,10 @@ from hackerrank.introduction import helloworld
 
 
 class TestHelloWorld(unittest.TestCase):
-    def test_sayhelloworld(self):
-        output = StringIO()  # Create StringIO object
-        sys.stdout = output  #  and redirect stdout.
-        helloworld.sayhelloworld() # Call unchanged function.
-        sys.stdout = sys.__stdout__   # Reset redirect.
-        result = output.getvalue() # Now works as before.
+    def test_fun_helloworld(self):
+        output = StringIO()
+        sys.stdout = output
+        helloworld.fun_helloworld()
+        sys.stdout = sys.__stdout__
+        result = output.getvalue()
         self.assertEqual(result, "Hello, World!\n")
