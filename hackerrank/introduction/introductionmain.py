@@ -1,7 +1,8 @@
-from hackerrank.introduction import module1, module2
+from hackerrank.introduction import helloworld, ifelse, arithematicoperator
 
 
 def main():
-    module1.main()
-    module2.main()
-
+    helloworld.sayhelloworld()
+    ifelse.if_else(3)
+    arithematicoperator.arithop(3, 2)
+    return 1;
