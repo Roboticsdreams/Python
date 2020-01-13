@@ -1,6 +1,6 @@
-from hackerrank.introduction import introductionmain
+from hackerrank import introduction
 
 
-def main():
-    introductionmain.main()
+def hackerrankmain():
+    introduction.intromain()
     return 1

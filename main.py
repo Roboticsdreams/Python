@@ -2,7 +2,7 @@ from hackerrank import hackerrankmain
 
 
 def main():
-    hackerrankmain.main()
+    hackerrankmain.hackerrankmain()
 
 
 if __name__ == "__main__":

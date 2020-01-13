@@ -4,8 +4,8 @@ import unittest
 
 
 class TestHackerRankMain(unittest.TestCase):
-    @mock.patch('hackerrank.introduction.introductionmain.main')
-    def test_main(self, mock_main):
-        result = hackerrankmain.main()
+    @mock.patch('hackerrank.introduction.intromain')
+    def test_main(self, mock_intromain):
+        result = hackerrankmain.hackerrankmain()
         expected = 1
         self.assertEqual(result, expected)
