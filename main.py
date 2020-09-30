@@ -1,8 +1,8 @@
-from hackerrank import hackerrankmain
+from dailycodingproblem import dailycodingproblemmain
 
 
 def main():
-    hackerrankmain.hackerrankmain()
+    dailycodingproblemmain.dailycodingproblemmain()
 
 
 if __name__ == "__main__":

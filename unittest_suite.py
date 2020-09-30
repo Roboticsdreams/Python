@@ -1,13 +1,13 @@
 import unittest
 
-from tests.hackerrank.test_introduction import TestIntroduction
-from tests.hackerrank.test_hackerrankmain import TestHackerRankMain
+from tests.dailycodingproblem.test_dailycodingproblemmain import TestDailyCodingProblemMain
+from tests.dailycodingproblem.test_google import TestGoogle
 
 
 def suite():
     suites = unittest.TestSuite()
-    suites.addTest(unittest.TestLoader().loadTestsFromTestCase(TestIntroduction))
-    suites.addTest(unittest.TestLoader().loadTestsFromTestCase(TestHackerRankMain))
+    suites.addTest(unittest.TestLoader().loadTestsFromTestCase(TestGoogle))
+    suites.addTest(unittest.TestLoader().loadTestsFromTestCase(TestDailyCodingProblemMain))
     return suites
 
 
