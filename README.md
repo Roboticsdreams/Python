@@ -7,8 +7,8 @@ This is a place where we workout for Daily Coding Problem with test case and ful
 
 ## Content Notes
 
-1. Contains Pair with Sum
+1. Pair Sum
+2. Product Array
 
-## Authors
-
- - P. Rathinavel
+## Authors 
+P. Rathinavel
