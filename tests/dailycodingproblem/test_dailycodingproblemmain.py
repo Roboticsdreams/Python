@@ -1,11 +1,10 @@
-from unittest import mock
-from dailycodingproblem import dailycodingproblemmain
 import unittest
+
+from dailycodingproblem import dailycodingproblemmain
 
 
 class TestDailyCodingProblemMain(unittest.TestCase):
-    @mock.patch('dailycodingproblem.google.googlemain')
-    def test_main(self, mock_GoogleMain):
+    def test_main(self):
         result = dailycodingproblemmain.dailycodingproblemmain()
         expected = 1
         self.assertEqual(result, expected)

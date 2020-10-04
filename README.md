@@ -9,7 +9,9 @@ This is a place where we workout for Daily Coding Problem with test case and ful
 
 1. Pair Sum
 2. Product Array
-3.
+3. Serialize and Deserialize 
+4. First Missing Positive
+5. Carcons vs Cdrcons
 
 ## Authors 
 P. Rathinavel
