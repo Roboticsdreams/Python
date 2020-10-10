@@ -1,7 +1,7 @@
 import unittest
+from unittest import mock
 
 from dailycodingproblem import stripe
-
 
 class TestStripe(unittest.TestCase):
     def setUp(self):
@@ -37,7 +37,8 @@ class TestStripe(unittest.TestCase):
         expected = 6
         self.assertEqual(result, expected)
 
-    def test_stripemain(self):
+    @mock.patch('dailycodingproblem.stripe.Stripe')
+    def test_stripemain(self, mock_Stripe):
         result = stripe.stripemain()
         expected = 1
         self.assertEqual(result, expected)

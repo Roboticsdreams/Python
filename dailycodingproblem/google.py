@@ -1,4 +1,5 @@
 from dailycodingproblem.commonutils import Node
+from collections import deque
 
 deserializecnt = 0
 
@@ -33,30 +34,39 @@ class Google:
         node = Node('root', Node('left', Node('left.left')), Node('right'))
         assert deserialize(serialize(node)).left.left.val == 'left.left'
     """
+    def serialize (self, node=None, s=""):
+        if node is None:
+            return None
 
-    def serialize(self, node, s=""):
-        if not node:
-            s += "# "
-            return s
-        s += (str(node.val) + " ")
-        s = self.serialize(node.left, s=s)
-        s = self.serialize(node.right, s=s)
+        stack = deque()
+        stack.append(node)
+        while (stack):
+            node = stack.pop()
+            if node is not None:
+                s += node.val+","
+                stack.append(node.right)
+                stack.append(node.left)
+            else:
+                s += "#,"
         return s
 
-    def deserialize(self, s):
-        global deserializecnt
-        if s[deserializecnt] == "#":
-            if deserializecnt < len(s) - 2:
-                deserializecnt += 2
+    def deserialize (self, s):
+        if s is None:
+            return None
+
+        arr = s.split(",")
+        return self.helper(arr, 0)
+
+    def helper(self, arr, t):
+        if arr[t] == "#":
             return None
         else:
-            space = s[deserializecnt:].find(" ")
-            sp = space + deserializecnt
-            node = Node(s[deserializecnt:sp])
-            deserializecnt = sp + 1
-            node.left = self.deserialize(s)
-            node.right = self.deserialize(s)
-            return node
+            root = Node(arr[t])
+            t = t + 1
+            root.left = self.helper(arr, t)
+            t = t + 1
+            root.right = self.helper(arr, t)
+            return root
 
 def googlemain():
     google = Google()

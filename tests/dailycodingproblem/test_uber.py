@@ -1,4 +1,5 @@
 import unittest
+from unittest import mock
 
 from dailycodingproblem import uber
 
@@ -13,7 +14,8 @@ class TestUber(unittest.TestCase):
         expected = [120, 60, 40, 30, 24]
         self.assertEqual(result, expected)
 
-    def test_ubermain(self):
+    @mock.patch('dailycodingproblem.uber.Uber')
+    def test_ubermain(self, mock_Uber):
         result = uber.ubermain()
         expected = 1
         self.assertEqual(result, expected)

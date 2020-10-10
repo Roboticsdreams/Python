@@ -26,9 +26,16 @@ class TestGoogle(unittest.TestCase):
     def test_seralizeDeseralize_Test01(self):
         node = Node('root', Node('left', Node('left.left')), Node('right'))
         result = self.googleobj.serialize(node)
-        print(self.googleobj.deserialize(result));
+        result1 = self.googleobj.deserialize(result).left.left.val
         expected = "left.left"
-        self.assertEqual(result, expected)
+        self.assertEqual(result1, expected)
+
+    def test_seralizeDeseralize_Test02(self):
+        node = None
+        result = self.googleobj.serialize(node)
+        result1 = self.googleobj.deserialize(result)
+        expected = None
+        self.assertEqual(result1, expected)
 
     @mock.patch('dailycodingproblem.google.Google')
     def test_googlemain(self, mock_Google):

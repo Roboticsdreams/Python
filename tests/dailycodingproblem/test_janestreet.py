@@ -1,7 +1,7 @@
 import unittest
+from unittest import mock
 
 from dailycodingproblem import janestreet
-
 
 class TestJaneStreet(unittest.TestCase):
     def setUp(self):
@@ -17,7 +17,8 @@ class TestJaneStreet(unittest.TestCase):
         expected = 4
         self.assertEqual(result, expected)
 
-    def test_janestreetmain(self):
+    @mock.patch('dailycodingproblem.janestreet.JaneStreet')
+    def test_janestreetmain(self, mock_JaneStreet):
         result = janestreet.janestreetmain()
         expected = 1
         self.assertEqual(result, expected)
