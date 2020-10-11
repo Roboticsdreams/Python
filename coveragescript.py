@@ -2,7 +2,7 @@ import os
 
 currentDirectory = os.getcwd()
 
-path = currentDirectory.split("/")
+path = os.path.split(currentDirectory)
 if path[len(path)-1] == "Python":
     os.chdir(currentDirectory)
 else:
