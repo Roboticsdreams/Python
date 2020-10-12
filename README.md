@@ -12,6 +12,8 @@ This is a place where we workout for Daily Coding Problem with test case and ful
 3. Serialize and Deserialize 
 4. First Missing Positive
 5. Carcons vs Cdrcons
+6. XOR Doubly linkedlist - pending
+7. Number Decode
 
 ## Authors 
 P. Rathinavel
