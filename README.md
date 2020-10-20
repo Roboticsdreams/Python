@@ -14,6 +14,9 @@ This is a place where we workout for Daily Coding Problem with test case and ful
 5. Carcons vs Cdrcons
 6. XOR Doubly linkedlist - pending
 7. Number Decode
+8. Single Value SubTree - pending
+9. Non-adjacent Max Sum
+10. Job Scheduler
 
 ## Authors 
 P. Rathinavel
