@@ -7,21 +7,17 @@ class Airbnb:
     Follow-up: Can you do this in O(N) time and constant space?
     """
 
-    def maxSum(self, list):
-        prev_prev_sum = 0
-        prev_sum = list[0]
-        for i in range(len(list)):
-            current_sum = prev_prev_sum + list[i]
-            if prev_prev_sum > prev_sum:
-                prev_prev_sum = prev_prev_sum
-            else:
-                prev_prev_sum = prev_sum
-            prev_sum = current_sum
+    def maxSum(self, arr):
+        incl = 0
+        excl = 0
 
-        if prev_prev_sum > prev_sum:
-            return prev_prev_sum
-        else:
-            return prev_sum
+        for i in arr:
+            new_excl = excl if excl > incl else incl
+            incl = excl + i
+            excl = new_excl
+
+        return (excl if excl > incl else incl)
+
 
 def airbnbmain():
     air = Airbnb()

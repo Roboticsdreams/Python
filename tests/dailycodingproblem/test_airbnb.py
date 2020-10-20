@@ -15,12 +15,12 @@ class TestAirbnb(unittest.TestCase):
 
     def test_maxSum_Test02(self):
         result = self.airbnbobj.maxSum([5, 1, 1, 5])
-        expected = 11
+        expected = 10
         self.assertEqual(result, expected)
 
     def test_maxSum_Test03(self):
         result = self.airbnbobj.maxSum([5, 125, 1, 3, 1])
-        expected = 133
+        expected = 128
         self.assertEqual(result, expected)
 
     @mock.patch('dailycodingproblem.airbnb.Airbnb')
