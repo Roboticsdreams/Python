@@ -18,6 +18,7 @@ This is a place where we workout for Daily Coding Problem with test case and ful
 09. Non-adjacent Max Sum
 10. Job Scheduler
 11. Autocomplete
+12. Staircase
 
 ## Authors 
 P. Rathinavel

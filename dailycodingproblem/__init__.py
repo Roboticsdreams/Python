@@ -1,5 +1,6 @@
 __all__ = [
     "airbnb",
+    "amazon",
     "apple",
     "commonutils",
     "dailycodingproblemmain",
