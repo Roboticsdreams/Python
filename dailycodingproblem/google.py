@@ -10,7 +10,7 @@ class Google:
     For example, given[10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.
     """
 
-    def containsPairWithSum(self, listinput, total):
+    def containspairwithsum(self, listinput, total):
         dicts = {}
         for i in listinput:
             if (total - i) in dicts:
@@ -34,23 +34,24 @@ class Google:
         node = Node('root', Node('left', Node('left.left')), Node('right'))
         assert deserialize(serialize(node)).left.left.val == 'left.left'
     """
-    def serialize (self, node=None, s=""):
+
+    def serialize(self, node=None, s=""):
         if node is None:
             return None
 
         stack = deque()
         stack.append(node)
-        while (stack):
+        while stack:
             node = stack.pop()
             if node is not None:
-                s += node.val+","
+                s += node.val + ","
                 stack.append(node.right)
                 stack.append(node.left)
             else:
                 s += "#,"
         return s
 
-    def deserialize (self, s):
+    def deserialize(self, s):
         if s is None:
             return None
 
@@ -68,9 +69,32 @@ class Google:
             root.right = self.helper(arr, t)
             return root
 
+    """"
+    Given an array of integers where every integer occurs three times except for one integer, 
+    which only occurs once, find and return the non-duplicated integer.
+    For example, 
+    Given [6, 1, 3, 3, 3, 6, 6], return 1. 
+    Given [13, 19, 13, 13], return 19.
+    Do this in O(N) time and O(1) space.
+    """
+
+    def nonrepeatingelement(self, arr):
+        ones = 0
+        twos = 0
+
+        for i in range(len(arr)):
+            twos = twos | (ones & arr[i])
+            ones = ones ^ arr[i]
+            common_bit_mask = ~(ones & twos)
+            ones &= common_bit_mask
+            twos &= common_bit_mask
+        return ones
+
+
 def googlemain():
     google = Google()
-    print(google.containsPairWithSum([10, 15, 3, 7], 17))
+    print(google.containspairwithsum([10, 15, 3, 7], 17))
     node = Node('root', Node('left', Node('left.left')), Node('right'))
     print(google.deserialize(google.serialize(node)).left.left.val)
+    print(google.nonrepeatingelement([13, 19, 13, 13]))
     return 1

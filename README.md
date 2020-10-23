@@ -12,13 +12,15 @@ This is a place where we workout for Daily Coding Problem with test case and ful
 03. Serialize and Deserialize 
 04. First Missing Positive
 05. Carcons vs Cdrcons
-06. XOR Doubly linkedlist - pending
+06. XOR Doubly linked list - pending
 07. Number Decode
 08. Single Value SubTree - pending
 09. Non-adjacent Max Sum
 10. Job Scheduler
 11. Autocomplete
 12. Staircase
+..
+39. NonRepeatingElement
 
 ## Authors 
 P. Rathinavel

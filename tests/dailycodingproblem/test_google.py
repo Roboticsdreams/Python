@@ -9,17 +9,17 @@ class TestGoogle(unittest.TestCase):
     def setUp(self):
         self.googleobj = google.Google()
 
-    def test_containsPairWithSum_Test01(self):
-        listinput = [10, 15, 3, 7]
+    def test_containspairwithsum_Test01(self):
+        arr = [10, 15, 3, 7]
         total = 17
-        result = self.googleobj.containsPairWithSum(listinput, total)
+        result = self.googleobj.containspairwithsum(arr, total)
         expected = True
         self.assertEqual(result, expected)
 
-    def test_containsPairWithSum_Test02(self):
-        listinput = [10, 15, 3, 7]
+    def test_containspairwithsum_Test02(self):
+        arr = [10, 15, 3, 7]
         total = 11
-        result = self.googleobj.containsPairWithSum(listinput, total)
+        result = self.googleobj.containspairwithsum(arr, total)
         expected = False
         self.assertEqual(result, expected)
 
@@ -36,6 +36,12 @@ class TestGoogle(unittest.TestCase):
         result1 = self.googleobj.deserialize(result)
         expected = None
         self.assertEqual(result1, expected)
+
+    def test_nonrepeatingelement_Test01(self):
+        list = [6, 1, 3, 3, 3, 6, 6]
+        result = self.googleobj.nonrepeatingelement(list)
+        expected = 1
+        self.assertEqual(result, expected)
 
     @mock.patch('dailycodingproblem.google.Google')
     def test_googlemain(self, mock_Google):
