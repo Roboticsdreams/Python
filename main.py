@@ -1,8 +1,9 @@
-from dailycodingproblem import dailycodingproblemmain
+from leetcode import leetcodemain
 
 
 def main():
-    dailycodingproblemmain.dailycodingproblemmain()
+    result = leetcodemain.leetcode_main()
+    print(result)
 
 
 if __name__ == "__main__":
