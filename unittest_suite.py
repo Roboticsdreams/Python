@@ -2,12 +2,14 @@ import unittest
 
 from tests.leetcode.problems.test_program1 import TestTwoSum
 from tests.leetcode.problems.test_program2 import TestAddTwoNumbers
+from tests.leetcode.problems.test_program3 import TestLongestSubstring
 
 
 def suite():
     suites = unittest.TestSuite()
     suites.addTest(unittest.TestLoader().loadTestsFromTestCase(TestTwoSum))
     suites.addTest(unittest.TestLoader().loadTestsFromTestCase(TestAddTwoNumbers))
+    suites.addTest(unittest.TestLoader().loadTestsFromTestCase(TestLongestSubstring))
     return suites
 
 
