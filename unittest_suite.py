@@ -3,6 +3,7 @@ import unittest
 from tests.leetcode.problems.test_program1 import TestTwoSum
 from tests.leetcode.problems.test_program2 import TestAddTwoNumbers
 from tests.leetcode.problems.test_program3 import TestLongestSubstring
+from tests.leetcode.problems.test_program4 import TestMedianSortedArrays
 
 
 def suite():
@@ -10,6 +11,7 @@ def suite():
     suites.addTest(unittest.TestLoader().loadTestsFromTestCase(TestTwoSum))
     suites.addTest(unittest.TestLoader().loadTestsFromTestCase(TestAddTwoNumbers))
     suites.addTest(unittest.TestLoader().loadTestsFromTestCase(TestLongestSubstring))
+    suites.addTest(unittest.TestLoader().loadTestsFromTestCase(TestMedianSortedArrays))
     return suites
 
 
