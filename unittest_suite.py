@@ -5,6 +5,8 @@ from tests.leetcode.problems.test_program2 import TestAddTwoNumbers
 from tests.leetcode.problems.test_program3 import TestLongestSubstring
 from tests.leetcode.problems.test_program4 import TestMedianSortedArrays
 from tests.leetcode.problems.test_program5 import TestLongestPalindrome
+from tests.leetcode.problems.test_program6 import TestZigzagConversion
+from tests.leetcode.problems.test_program7 import TestReverseInteger
 
 def suite():
     suites = unittest.TestSuite()
@@ -13,6 +15,8 @@ def suite():
     suites.addTest(unittest.TestLoader().loadTestsFromTestCase(TestLongestSubstring))
     suites.addTest(unittest.TestLoader().loadTestsFromTestCase(TestMedianSortedArrays))
     suites.addTest(unittest.TestLoader().loadTestsFromTestCase(TestLongestPalindrome))
+    suites.addTest(unittest.TestLoader().loadTestsFromTestCase(TestZigzagConversion))
+    suites.addTest(unittest.TestLoader().loadTestsFromTestCase(TestReverseInteger))
     return suites
 
 

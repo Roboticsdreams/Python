@@ -14,6 +14,8 @@ This is a place where we workout for LeetCode Problem with test case and full co
 3. Longest Substring Without Repeating Characters
 4. Median of Two Sorted Arrays
 5. Longest Palindrome Substring
+6. Zigzag Conversion
+7. Reverse Integer
 
 ## Authors 
 P. Rathinavel
