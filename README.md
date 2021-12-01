@@ -16,6 +16,7 @@ This is a place where we workout for LeetCode Problem with test case and full co
 5. Longest Palindrome Substring
 6. Zigzag Conversion
 7. Reverse Integer
+8. String to Integer
 
 ## Authors 
 P. Rathinavel

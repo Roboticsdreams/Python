@@ -6,4 +6,5 @@ __all__ = [
     "test_program5",
     "test_program6",
     "test_program7",
+    "test_program8",
 ]
