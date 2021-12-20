@@ -17,6 +17,7 @@ This is a place where we workout for LeetCode Problem with test case and full co
 6. Zigzag Conversion
 7. Reverse Integer
 8. String to Integer
+9. Palindrome Number
 
 ## Authors 
 P. Rathinavel
